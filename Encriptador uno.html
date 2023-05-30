@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es-419">
+    <head>
+        <meta charset "UTF-8">
+        <meta name="viewport" content="width=device-width"> <!- Meta para hacer la pagina responsiva -->
+        <title>Encriptador uno</title>
+        <link rel="stylesheet" href="reset.css"> <!- referenciando a la pagina de estilo para el reset -->
+        <link rel="stylesheet" href="encriptadorStyle.css">
+    </head>
+    
+    <body>
+        <header class="logoA">
+            <h1><img src="Logo.png" alt="Logo de Alura"></h1>
+        </header>
+
+        <div class="logoExclamacion"><img src="Frame 1.png" alt="Logo de exclamacion"></div>
+
+        <textarea cols="70" rows="6" id="textoentrada" class="ingreseTexto" placeholder="Ingrese el texto aqui"></textarea>
+        <input type="submit" value="Encriptar" class="botonEncriptar" onclick="btnEncriptar()">
+        <input type="submit" value="Desencriptar" class="botonDesencriptar" onclick="btnDesencriptar()">
+
+        <textarea cols="70" rows="6" id="textofinal" class="textoSalida" placeholder="Texto encriptado o desencriptado"></textarea>
+
+        <input type="submit" value="Copiar" class="botonCopiar" onclick="btnCopiar()">
+
+    </body>
+</html>
+<script src="encriptadorLogica.js"></script>

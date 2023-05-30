@@ -1,0 +1,411 @@
+html{
+    background:  #F3F5FC;
+}
+
+.logoA{
+    margin: 40px 0 0 40px;
+}
+
+.logoExclamacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 180px;/*240px*/
+    top: 420px;/*851px*/
+}
+
+/*.frameCinco{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 1032px;
+    top: 619px;
+}*/
+
+/*.muneco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}*/
+
+/*.frameTres{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 680px;
+height: 67px;
+left: 240px;
+top: 885px;
+}*/
+
+.ingreseTexto{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    left: 180px;/*240px*/
+    top: 168px;  
+    
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;  
+    color: rgb(8, 139, 139); 
+}
+
+.ingreseTexto::placeholder{
+    color: rgb(68, 68, 199);
+}
+
+.botonEncriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 328px;
+    height: 67px;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    background: rgb(61, 61, 252);
+    border-radius: 24px;
+    border: solid rgb(224, 224, 8) 3px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    /*  Posicion*/
+    position: absolute;
+    left: 240px;
+    top: 485px;/*885px*/
+
+    /*texto "Encriptar"*/
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.botonEncriptar:hover{
+    background: darkblue;
+    transform: scale(1.1);
+}
+
+
+.botonDesencriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 328px;
+    height: 67px;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    background: rgb(61, 61, 252);
+    border-radius: 24px;
+    border: solid rgb(224, 224, 8) 3px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    /*  Posicion*/
+    position: absolute;
+    left: 592px; 
+    top: 485px;/*885px*/
+
+    /*texto "Encriptar"*/
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    justify-content: center; 
+
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.botonDesencriptar:hover{
+    background: darkblue;
+    transform: scale(1.1);
+}
+
+
+.textoSalida{
+   /* position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    /* White */
+
+    /*background: #FFFFFF;
+    /* shadow */
+
+    /*box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;*/
+
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+
+    position: absolute;
+    width: 20%;/*50%*/
+    height: 50%;/*30%*/
+    left: 1000px;
+    top: 40px;  
+    
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;  
+    color: rgb(8, 139, 139); 
+
+}
+
+
+.botonCopiar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 328px;
+    height: 67px;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    background: lightgrey;
+    border-radius: 24px;
+    border: solid blue 3px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    /*  Posicion*/
+    position: absolute;
+    left: 1000px; 
+    top: 485px;/*485px*/
+
+    /*texto "Encriptar"*/
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    justify-content: center; 
+
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.botonCopiar:hover{
+    background: gray;
+    transform: scale(1.1);
+}
+
+
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+
+
+    .logoExclamacion{
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 40px;
+        top: 836px;
+    }
+
+    /*.frameCinco{
+        position: absolute;
+        width: 688px;
+        height: 133px;
+        left: 40px;
+        top: 1001px;
+        justify-content: center;
+    }
+
+    .muneco{
+        display: none;
+    }*/
+
+    .ingreseTexto{
+        position: absolute;
+        width: 82%;
+        height: 30%;
+        left: 40px;
+        top: 240px;
+    }
+
+    .botonEncriptar{
+        display: inline;
+        width: 328px; /*328px*/
+        height: 67px;
+        
+        position: absolute;
+        left: 40px;
+        top: 870px;
+    }
+
+    .botonDesencriptar{
+        display: inline;
+        width: 328px;
+        height: 67px;
+        
+        position: absolute;
+        left: 400px;
+        top: 870px;
+    }
+
+    .textoSalida{
+        position: absolute;
+        width: 82%;/*688px*/
+        height: 25%;/*133px*/
+        left: 40px;
+        top: 1001px;
+    }
+
+    .textoSalida>img{
+        display: none;
+    }
+
+    .botonCopiar{
+        display: inline;
+        width: 328px; /*328px*/
+        height: 67px;
+        
+        position: absolute;
+        left: 40px;
+        top: 1300px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    
+
+    header{
+        position: absolute;
+        width: 375px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .logoExclamacion{
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 16px;
+        top: 451px; 
+    }
+
+    /*.frameCinco{
+        padding: 32px;
+        gap: 32px;
+
+        position: absolute;
+        width: 327px;
+        height: 186px;
+        left: 24px;
+        top: 707px;
+    }
+
+    .muneco{
+        display: none;
+    }*/
+
+    .ingreseTexto{
+        position: absolute;
+        width: 340px;
+        height: 248px;/*48px*/
+        left: 16px;
+        top: 152px; 
+    }
+
+    .botonEncriptar{
+        
+        position: absolute;
+        left: 16px;
+        top: 485px;
+
+        width: 343px;
+        height: 67px;
+
+        align-self: stretch;
+    }
+
+    .botonDesencriptar{
+        position: absolute;
+        left: 16px; 
+        top: 576px;
+
+        width: 343px;
+        height: 67px;
+
+        order: 1;
+        align-self: stretch;
+    }
+    
+    .textoSalida{
+        position: absolute;
+        width: 327px;
+        height: 186px;
+        left: 24px;
+        top: 707px;
+    }
+
+    .textoSalida>img{
+        display: none;
+    }
+
+    .botonCopiar{
+        
+        position: absolute;
+        left: 16px;
+        top: 985px;
+
+        width: 343px;
+        height: 67px;
+
+        align-self: stretch;
+    }
+}
